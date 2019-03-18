@@ -7,7 +7,7 @@ if (isset($_GET['debug']) && $_GET['debug']) @define('CONST_Debug', true);
 
 // General settings
 @define('CONST_Debug', false);
-@define('CONST_Database_DSN', 'pgsql:dbname=nominatim'); // or add ;host=...;port=...;user=...;password=...
+@define('CONST_Database_DSN', 'pgsql:dbname=gis;host=postgis;port=5432;user=postgres;password=postgres'); // or add ;host=...;port=...;user=...;password=...
 @define('CONST_Database_Web_User', 'www-data');
 @define('CONST_Database_Module_Path', CONST_InstallPath.'/module');
 @define('CONST_Max_Word_Frequency', '50000');
